@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Arcana HTML5 UP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+   <style>
+   *{
+    box-sizing: border-box;
+   }
+      body{
+        background-color: hwb(0 100% 0%);
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+      }
+     
+      
+      
+     
+      
+      footer{
+        background: hwb(0 84% 16% / 0.5490196078431373);
+        padding: 20px;
+        
+        width: 100%;
+      }
+     .link a{
+        text-decoration-style: dotted;
+        margin-top: 20px;
+       color: hwb(0 70% 30%);
+       
+      }
+      a:hover{
+        color: hwb(202 20% 4%);
+        text-decoration: none;
+        
+      }
+      h3{
+        font-weight: bold;
+        
+      }
+      
+
+      input{
+        padding: 5px;
+        border: none;
+        
+        border-radius: 5px;
+        width: 50%;
+        height: auto;
+        
+        
+      }
+      #in{
+        display: flex;
+        gap: 10px;
+      }
+      textarea{
+        border: none;
+        padding: 5px;
+        margin-top: 5px;
+        border-radius: 5px;
+        width: 100%;
+        height: 50px;
+      }
+      #form_submit:hover{
+        background-color: rgb(49, 47, 47);
+      }
+      #form_submit{
+        background-color: rgb(23, 23, 23);
+        padding: 15px;
+        margin-top: 5px;
+        border-style: none;
+
+       border-radius: 10px;
+        color: rgb(248, 244, 244);
+        font-size: 15px;
+        font-weight: bold;
+        
+        
+      }
+    .main{
+      display: flex;
+      
+       justify-content: center;
+      align-items: center;
+      gap: 100px;
+    }
+      .allIcons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 30px;
+        color: hwb(80 32% 65%);
+      }
+      
+      .pf{
+        color: hwb(84 58% 40%);
+        text-align: center;
+        padding-bottom: 30px;
+      }
+      .icons:hover{
+        color: hwb(202 20% 4%);
+      }
+      .bContainer{
+        background: hwb(120 13% 80%);
+        padding: 30px;
+        text-align: center;
+        color: white;
+        margin: 0px;
+        width: 100%;
+        
+        
+        
+      }
+      .bContainer button{
+        background:white;
+        color: lab(0% 0 0);
+        padding: 10px;
+        border-radius: 5px;
+      }
+      @media screen and (max-width: 768px) {
+
+    
+      }
+      .center{
+        background: hwb(120 13% 80%);
+        padding: 15px;
+        
+      }
+    .center p{
+      color: white;
+      text-align: center;
+      font-size: 20px;
+      
+    }
+      
+      .tagLine{
+        background: hwb(120 13% 80%);
+        text-align: center;
+        padding: 10px;
+      }
+      .tagLine b{
+        color: white;
+      }
+      .tagLine p, a{
+        color: hwb(0 70% 30%);
+      }
+      .tagLine a{
+        text-decoration: none;
+      }
+      .tagLine button{
+        
+        background:hwb(202 11% 7%);
+        color: hwb(0 100% 0%);
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+      #cards{
+background: #050505;
+background: linear-gradient(90deg, rgba(5, 5, 5, 1) 0%, rgba(87, 87, 87, 1) 50%, rgba(99, 51, 51, 1) 100%);         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         padding-top: 40px;
+         padding-bottom: 40px;
+         gap: 60px;
+      }
+     .card {
+background: #278744;
+background: linear-gradient(90deg, rgba(39, 135, 68, 1) 0%, rgba(50, 56, 29, 1) 35%, rgba(28, 127, 112, 1) 63%, rgba(0, 0, 0, 1) 100%);    border-radius: 10px;
+    box-shadow: 5px 5px 3px rgb(13, 9, 9);
+    width: 40%;
+    display: flex;
+    align-self: center;
+    padding: 25px;
+    gap: 15px;
+}
+p{
+  font-family: '';
+  font-style: italic;
+
+}
+@media screen and (max-width: 768px) {
+  .card,
+  .hcard {
+    width: 90%;
+  }
+}
+.card img {
+   
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    
+}
+.card p {
+    color: rgb(254, 253, 250);
+    margin: 0px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}
+
+.nav{
+    background: hwb(120 13% 80%);
+    display: flex;
+    gap: 5%;
+    padding: 20px;
+    justify-content: center;
+   
+}
+.nav a{
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+   cursor: pointer;
+font-weight: bold;   
+}
+.nav a:hover{
+  color: gold;
+  
+}
+    
+
+
+
+.dropdown ul{
+      background: hwb(120 13% 80%);
+
+  list-style: none;
+color: hwb(0 70% 30%);
+        cursor: pointer;
+position: absolute;
+display: none;
+padding: 5px;
+margin: 0px;
+border-radius: 3px;
+box-shadow: 5px 5px 3px 2px rgb(7, 7, 7);
+
+
+}
+  li {
+  text-align: left;
+  padding: 3px;
+
+ 
+  
+}
+.dropdown:hover ul{
+  display: block;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+.dropdown li:hover{
+  color: white;
+ 
+}
+.dropdown{
+  position: relative;
+  
+}
+#tci:hover{
+
+  color: rgb(10, 10, 10) ;
+
+}
+#threecards{
+  display: flex;
+  gap: 20px;
+  
+}
+.threecards{
+  background-color: rgb(55, 96, 140);
+  color: white;
+  margin: 50px;
+  padding: 20px;
+  box-shadow: 5px 5px 3px rgb(63, 62, 62);
+  border-radius: 10px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+
+  
+}
+
+.threecards:hover {
+    
+    color: rgb(21, 14, 14);
+    transform: scale(1.1);  
+    box-shadow: 5px 5px 3px black;
+    color: white;
+}
+.threecards h4 {
+  text-align: center;
+}
+#tci {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 20px;
+  color: rgb(10, 10, 10);
+  background: white;
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+
+}
+.threecards p{
+  font-family: 'inter';
+  text-align: justify;
+  padding: 10px;
+}
+.card p{
+  font-family: 'inter' ;
+  
+}
+/* =========================
+   MOBILE RESPONSIVE
+   ========================= */
+
+@media screen and (max-width: 768px) {
+
+    /* Navigation */
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+    }
+
+
+    /* Tag line */
+    .tagLine {
+        padding: 15px;
+    }
+
+    .tagLine p {
+        line-height: 1.6;
+    }
+
+    /* Three cards */
+    #threecards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .threecards {
+        width: 90%;
+        max-width: 400px;
+        margin: 10px;
+    }
+
+    /* Center heading */
+    .center {
+        padding: 15px;
+    }
+
+    .center p {
+        font-size: 18px;
+    }
+
+    /* Four cards */
+    #cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 30px 10px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    /* Footer sections */
+    .main {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+    }
+
+    /* Form inputs */
+    #in {
+        flex-direction: column;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    /* Social icons */
+    .allIcons {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /* Footer text */
+    .pf {
+        font-size: 14px;
+    }
+
+}
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero > img {
+    width: 100%;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    width: 45%;
+}
+
+.hero-text .small-text {
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero-text h1 {
+    font-size: 45px;
+    line-height: 1.1;
+    margin: 10px 0;
+    color: #111827;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.learn-btn {
+    display: inline-block;
+    background: #05460d;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.learn-btn:hover {
+    background: #161617;
+color: aliceblue;
+}
+@media screen and (max-width: 768px) {
+
+    .hero-text {
+        top: 10%;
+        left: 5%;
+        transform: none;
+        width: 55%;
+    }
+
+    .hero-text .small-text {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .hero-text h1 {
+        font-size: 22px;
+    }
+
+    .hero-text p {
+        font-size: 11px;
+    }
+
+    .learn-btn {
+        padding: 8px 14px;
+        font-size: 11px;
+    }
+    .mobile-menu-btn {
+    display: block;
+}
+  
+
+}
+.mn-bt {
+    display: none;
+    align-items: left;
+    justify-content: left;
+}
+
+@media screen and (max-width: 768px) {
+
+    .mn-bt {
+        display: block;
+        background: rgb(250, 247, 247);
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .nav.mobile-open > div {
+        display: block;
+    }
+
+    .nav:not(.mobile-open) > div {
+        display: none;
+    }
+}
+
+.hr1{
+  height: 8px;
+  border: none;
+  background-color: rgb(10, 10, 10);
+}
+hr2{
+  border: none;
+
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <button class="mn-bt" onclick="toggleMenu()">
+    <i class="fa-solid fa-bars"></i>
+</button>
+     
+      <div class="home"><a href="index.html">Home</a></div>
+       <div class="dropdown"><a href="#">DropDown</a>
+        <ul>
+          <li>adj djfdsf</li>
+        <li>hsaj dsdjs</li>
+        <li>hsashd skj</li>
+      <li>hsah hdij</li>
+    <li>hsaj</li>
+  </ul>
+</div>
+        <div class="leftsidebar"><a href="left.html">Left Sidebar</a></div>
+         <div class="rightsidebar"><a href="right.html">Right Sidebar</a></div>
+          <div class="nosidebar"><a href="nosidebar.html">No Sidebar</a></div>
+           <div class="twosidebar"><a href="two.html">Two Sidebar</a></div>
+    </div>
+    <div class="hero">
+
+    <img src="imag.png" alt="Education Banner" width="100%" height="auto">
+
+    <div class="hero-text">
+        <p class="small-text">LEARN • PRACTICE • GROW</p>
+
+        <h1>Build a Brighter<br>Future with Learning</h1>
+
+        <p>
+            Access quality notes, past papers, and helpful resources
+            to achieve your academic goals.
+        </p>
+
+        <a href="#" class="learn-btn">Start Learning Now →</a>
+    </div>
+
+</div>
+   
+
+
+
+    <div class="tagLine">
+     <p> <b>Arcana:</b> 
+      A responsive site template freebie by
+      <a href="https://html5up.net/">HTML5 UP </a>
+      <button>Learn more</button></p>
+    </div>
+
+    <div id="threecards">
+    <div class="threecards">
+      <div id="tci"><div class="tci"><i class="fa-brands fa-facebook-f"></i></div></div>
+
+      <h4>This is Important</h4><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae rem provident, harum odio iste itaque cupiditate perspiciatis?</p>
+    </div>
+<div class="threecards">
+      
+<div id="tci"><div class="tci"><i class="fa-brands fa-github"></i></div></div>
+      <h4>Also Important</h4><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae rem provident, harum odio iste itaque cupiditate perspiciatis?</p>
+    </div>
+    <div class="threecards">
+      <div id="tci"><div class="tci"><i class="fa-brands fa-twitter"></i></div></div>
+
+      <h4>Probably Important</h4><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae rem provident, harum odio iste itaque cupiditate perspiciatis?</p>
+    </div>
+
+
+
+    </div>
+
+
+ 
+
+
+   
+   
+   
+    <div class="center">
+      <p><b>A gigantic heading you can use for whatever</b></p><hr class="hr1">
+      <hr class="hr2">
+      <p>With a much smaller subtitle hanging out just below it</p>
+    </div>
+     <div id="cards"> 
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXCsW10nAjoXFTDiXZW7Y-fPj9YPUX0aDKyIj-R9lhYw&s=10" alt="1"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, aliquam expedita iure autem porro mollitia obcaecati perspiciatis, </p></div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLzOsXAGnBHRlP3m5OClYHGLxQHkqyJQGVI3Vxk3d6aA&s" alt="2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum velit rem perferendis sed aliquam animi, ullam, iste praesentium </p></div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS7tDjB6rpqu7AGHlM7loysWCR_GYESZLcY5uywikjvQ&s=10" alt="3"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat veritatis dolor distinctio et in possimus obcaecati hic.</p></div>
+    <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv1a3iA8eqCsB_s3Yh8XJDVgN4H1KCwnuaqegb-YG-ynm2uEXXS2smE68B&s=10" alt="3"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur voluptas ipsam, laboriosam </p></div>
+  </div>
+
+    <div class="bContainer"><b>Are you ready to continue your quest? </b><button><b>Insert coin</b></button></div>
+
+
+    <footer>
+      <div class="main">
+      
+       <div class="link" id="link1"> <h3>Links to Stuff</h3><br>
+<a href="">Duis neque nisi dapibus</a><br><br>
+<a href="">Sed et dapibus quis</a><br><br>
+<a href="">Rutrum accumsan sed</a><br><br>
+<a href="">Mattis et sed accumsan</a><br><br>
+<a href="">Sed et dapibus mattis</a><br><br>
+<a href="">Sed et dapibus quis</a><br><br>
+<a href="">Suspendisse varius nibh</a><br>
+       </div>
+
+      
+      <div class="link" id="link2"> 
+        <h3>More Links to Stuff</h3><br><br>
+<a href="">Mattis et quis rutrum</a><br><br>
+<a href="">Sed et dapibus quis</a><br><br>
+<a href="">Mattis rutrum accumsan</a><br><br>
+<a href="">Suspendisse amet varius</a><br>  <br>
+<a href="">Sed et dapibus mattis</a><br><br>
+<a href="">Rutrum accumsan dolor</a><br><br>
+<a href="">Rutrum amet varius</a>
+      </div>
+      <div class="link">
+        <form>
+        <h3>Get In Touch</h3>
+          <div id="in">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+      </div>
+          <textarea placeholder="Message"></textarea>
+          <br>
+          <button type="submit" id="form_submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+      
+    
+    <div class="allIcons">
+      <div class="icons"><i class="fa-brands fa-facebook-f"></i></div>
+      <div class="icons"><i class="fa-brands fa-linkedin-in"></i></div>
+      <div class="icons"><i class="fa-brands fa-github"></i></div>
+      <div class="icons"><i class="fa-brands fa-twitter"></i></div>
+      </div>  
+      <p class="pf">&copy; Untitled. All rights reserved | Design: HTML5 UP</p>
+      
+    </footer>
+    <script>
+function toggleMenu() {
+    const nav = document.querySelector(".nav");
+
+    nav.classList.toggle("mobile-open");
+}
+</script>
+  </body>
+</html>

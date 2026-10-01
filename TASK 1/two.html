@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+   
+    <style> 
+    *{
+    box-sizing: border-box;
+   }
+      body{
+        background-color: hwb(0 100% 0%);
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+      }
+      
+    footer{
+        background: hwb(0 84% 16% / 0.5490196078431373);
+        padding: 20px;
+        
+        width: 100%;
+      }
+     .link a{
+        text-decoration-style: dotted;
+        margin-top: 20px;
+       color: hwb(0 70% 30%);
+       
+      }
+      a:hover{
+        color: hwb(202 20% 4%);
+        text-decoration: none;
+        
+      }
+      h3{
+        font-weight: bold;
+        
+      }
+      p{
+        text-align: justify;
+      }
+      
+
+      input{
+        padding: 5px;
+        border: none;
+        
+        border-radius: 5px;
+        width: 50%;
+        height: auto;
+        
+        
+      }
+      #in{
+        display: flex;
+        gap: 10px;
+      }
+      textarea{
+        border: none;
+        padding: 5px;
+        margin-top: 5px;
+        border-radius: 5px;
+        width: 100%;
+        height: 50px;
+      }
+      
+       #form_submit:hover{
+        background-color: rgb(49, 47, 47);
+      }
+      
+      #form_submit{
+         background-color: rgb(23, 23, 23);
+        padding: 15px;
+        margin-top: 5px;
+        border-style: none;
+
+       border-radius: 10px;
+        color: rgb(248, 244, 244);
+        font-size: 15px;
+        font-weight: bold;
+        
+        
+      }
+    .main{
+      display: flex;
+     
+ justify-content: center;
+      align-items: center;
+      gap: 100px;    }
+      .allIcons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 30px;
+        color: hwb(80 32% 65%);
+      }
+      
+      .pf{
+        color: hwb(84 58% 40%);
+        text-align: center;
+        padding-bottom: 30px;
+      }
+      .icons:hover{
+        color: hwb(202 20% 4%);
+      }
+     .nav{
+    background: hwb(120 13% 80%);
+    display: flex;
+    gap: 5%;
+    padding: 20px;
+    justify-content: center;
+   
+}
+.nav a{
+  text-decoration: none;
+   cursor: pointer;
+   font-size: larger;
+   font-weight: bold;
+   color: white;
+}
+.nav a:hover{
+  color: gold;
+  
+}
+    
+    
+.dropdown ul{
+      background: hwb(120 13% 80%);
+
+  list-style: none;
+color: hwb(0 70% 30%);
+        cursor: pointer;
+position: absolute;
+display: none;
+padding: 5px;
+margin: 0px;
+border-radius: 3px;
+box-shadow: 3px 3px 2.5px grey;
+
+
+}
+  li {
+  text-align: left;
+  padding: 3px;
+
+ 
+  
+}
+.dropdown:hover ul{
+  display: block;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+.dropdown li:hover{
+  color: white;
+ 
+}
+.dropdown{
+  position: relative;
+  
+}
+
+#main{
+  display: flex;
+padding-left: 100px;
+padding-right: 100px;    
+padding-top: 20px;
+padding-bottom: 50px;
+justify-content: center;
+align-items: center;
+}
+img{
+  width: 500px;
+  height: 200px;
+  border-radius: 8px;
+ 
+
+}
+.mcenter{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+p{
+  font-family: 'inter';
+}
+.mleft button{
+  background-color: rgb(12, 110, 231);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  border-style: none;}
+.mleft button:hover{
+  background-color: rgb(59, 59, 134);
+  box-shadow: 3px 3px 1px rgb(3, 2, 2);
+
+}
+.mright button{
+  background-color: rgb(12, 110, 231);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  border-style: none;}
+.mright button:hover{
+  background-color: rgb(59, 59, 134);
+  box-shadow: 3px 3px 1px rgb(3, 2, 2);
+
+}
+.mleft{
+  margin-top: -150px;
+}
+.mright{
+    margin-top: -150px;
+
+}
+.mleft a{
+
+  text-decoration: none;
+ 
+  color: rgb(12, 110, 231);
+}
+.mright a{
+
+  text-decoration: none;
+ 
+  color: rgb(12, 110, 231);
+}
+.mright a:hover{
+  color: grey;
+  cursor: pointer;
+}
+.mleft a:hover{
+  color: grey;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+
+    /* Navigation */
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    /* Main three-column area */
+    #main {
+        flex-direction: column;
+        padding: 20px 15px 40px 15px;
+        margin: 0;
+        width: 100%;
+    }
+
+    /* All three sections */
+    .mleft,
+    .mcenter,
+    .mright {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Center content */
+    .mcenter {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Images */
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Footer */
+    .main {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+    }
+
+    /* Form */
+    #in {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    /* Social icons */
+    .allIcons {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /* Copyright */
+    .pf {
+        font-size: 14px;
+    }
+    button {
+      width: 100%;
+    }
+
+}
+.mobile-menu-btn {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .mobile-menu-btn {
+        display: block;
+        background: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .nav.mobile-open > div {
+        display: block;
+    }
+
+    .nav:not(.mobile-open) > div {
+        display: none;
+    }
+}
+
+</style>
+
+
+</head>
+<body>
+    <div class="nav">
+      <button class="mobile-menu-btn" onclick="toggleMenu()">
+    <i class="fa-solid fa-bars"></i>
+</button>
+      <div class="home"><a href="index.html">Home</a></div>
+       <div class="dropdown"><a href="#">DropDown</a>
+        <ul>
+          <li>adj djfdsf</li>
+        <li>hsaj dsdjs</li>
+        <li>hsashd skj</li>
+      <li>hsah hdij</li>
+    <li>hsaj</li>
+  </ul>
+</div>
+        <div class="leftsidebar"><a href="left.html">Left Sidebar</a></div>
+         <div class="rightsidebar"><a href="right.html">Right Sidebar</a></div>
+          <div class="nosidebar"><a href="nosidebar.html">No Sidebar</a></div>
+           <div class="twosidebar"><a href="two.html">Two Sidebar</a></div>
+    </div>
+     <div id="main">
+      <div class="mleft"><h2>Just a Subheading</h2><p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat. Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis et nisi etiam.</p><button>Continue Reading</button><h2>Another Subheading
+</h2><a href="">Amet turpis, feugiat sit ame</a><br><br><a href="">Ornare in hendrerit lectus</a><br><br><a href="">Semper mod quis eget dolore</a><br><br><a href="">Consequat lorem phasellus</a><br><br><a href="">Semper mod quisturpis nisi</a><br><br><button>Add More Links</button></div>
+       <div class="mcenter"><h1>Two Sidebar</h1><p>Yup. Two sidebars at the same time.</p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfjMW_v0CZqqG0TWWIf4Tu3vXf-9ltWvFu7UzcmlgaUQ&s=10" alt=""><p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat. Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi consequat etiam lorem ipsum dolor sit amet nullam.
+
+</p><h2>And Yet Another Subheading
+</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam risus, at tempus justo. Sed dictum rutrum massa eu volutpat. Quisque vitae hendrerit sem. Pellentesque lorem felis, ultricies a bibendum id, bibendum sit amet nisl. Mauris et lorem quam. Maecenas rutrum imperdiet rhoncus dui quis euismod. Maecenas lorem tellus, congue et condimentum ac, ullamcorper non sapien. Donec sagittis massa et leo semper a scelerisque metus faucibus. Morbi congue mattis mi. Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum commodo luctus.
+
+</p><br><p>Phasellus odio risus, faucibus et viverra vitae, eleifend ac purus. Praesent mattis, enim quis hendrerit porttitor, sapien tortor viverra magna, sit amet rhoncus nisl lacus nec arcu. Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu. Vestibulum purus augue, tincidunt sit amet iaculis id, porta eu purus.
+
+</p></div>
+<div class="mright"><h2>Just a Subheading</h2><p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat. Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis et nisi etiam.</p><button>Continue Reading</button><h2>Another Subheading
+</h2><a href="">Amet turpis, feugiat sit ame</a><br><br><a href="">Ornare in hendrerit lectus</a><br><br><a href="">Semper mod quis eget dolore</a><br><br><a href="">Consequat lorem phasellus</a><br><br><a href="">Semper mod quisturpis nisi</a><br><br><button>Add More Links</button></div>
+            
+     </div>
+
+    
+
+        <footer>
+      <div class="main">
+       <div class="link" id="link1"> <h3>Links to Stuff</h3><br>
+<a href="">Duis neque nisi dapibus</a><br><br>
+<a href="">Sed et dapibus quis</a><br><br>
+<a href="">Rutrum accumsan sed</a><br><br>
+<a href="">Mattis et sed accumsan</a><br><br>
+<a href="">Sed et dapibus mattis</a><br><br>
+<a href="">Sed et dapibus quis</a><br><br>
+<a href="">Suspendisse varius nibh</a><br>
+       </div>
+
+      
+      <div class="link" id="link2"> 
+        <h3>More Links to Stuff</h3><br><br>
+<a href="">Mattis et quis rutrum</a><br><br>
+<a href="">Sed et dapibus quis</a><br><br>
+<a href="">Mattis rutrum accumsan</a><br><br>
+<a href="">Suspendisse amet varius</a><br>  <br>
+<a href="">Sed et dapibus mattis</a><br><br>
+<a href="">Rutrum accumsan dolor</a><br><br>
+<a href="">Rutrum amet varius</a>
+      </div>
+      <div class="link">
+        <form>
+        <h3>Get In Touch</h3>
+          <div id="in">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+      </div>
+          <textarea placeholder="Message"></textarea>
+          <br>
+          <button type="submit" id="form_submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+      
+    
+    <div class="allIcons">
+      <div class="icons"><i class="fa-brands fa-facebook-f"></i></div>
+      <div class="icons"><i class="fa-brands fa-linkedin-in"></i></div>
+      <div class="icons"><i class="fa-brands fa-github"></i></div>
+      <div class="icons"><i class="fa-brands fa-twitter"></i></div>
+      </div>  
+      <p class="pf">&copy; Untitled. All rights reserved | Design: HTML5 UP</p>
+      
+    </footer>
+    <script>
+function toggleMenu() {
+    const nav = document.querySelector(".nav");
+
+    nav.classList.toggle("mobile-open");
+}
+</script>
+</body>
+</html>
